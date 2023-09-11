@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+*		{	box-sizing: border-box;}
+
+header 	{	background-color: #dd8d40;
+			text-align: center;
+			margin-bottom: 0;
+			padding-bottom: 0;
+}
+header 	h1 	{	font-family: Helvetica, Arial, "sans-serif";
+				margin-bottom: 0;
+				padding-bottom: 0;
+				color: #ffffff;
+}
+header 	h2 	{	font-family: Helvetica, Arial, "sans-serif";
+				margin-top: 0;
+				margin-bottom: 0;
+				color: #ffffff;
+}
+nav 		{	padding: 0em;
+				margin-top: 0;
+				font-weight: bold;
+				text-align: center;
+}
+nav	a 		{	text-decoration: none;
+				color: #000000;
+				font-family: "Times New Roman", "serif";
+}
+nav	ul	{	list-style: none;
+			margin: 0;
+			padding: 0;
+			font-size: 1.2em;
+			border-top: 1px solid #dd8d40;
+}
+nav	li	{	border-bottom: 1px solid #dd8d40;
+			padding: .25em;
+}
+p 		{	margin-left: 1em;
+			margin-right: 1em;
+}
+main 	{	position: absolute;
+			top: 800px;
+			z-index: 5;
+}
+footer 	{	text-align: center;
+			color: #ffffff;
+			background-color: #48251e;
+}
+footer 	ul 	{	list-style: none;}
+footer 	li 	{	margin-bottom: 10px;
+				padding: 0 0 20px 0;
+}
+footer 	li 	a 	{	text-decoration: none;
+					color: #ffffff;
+}
+
+#backdrop	{	background-color: #cecec6;
+				border: 1px solid #dd8d40;
+				margin-top: 0;
+				padding-bottom: 400px;
+}
+#gallery	{	display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				width: 96%;
+				margin: auto;
+}
+figcaption 	{	font-size: 2em;}
+nav 	a:hover 	{	color: #dd8d40;}
+
+.header_1024 	{	display: none;}
+.mug_display 	{	display: none;}
+.mobilehero 	{	display: block;
+					width: 100%;
+					margin: 20px auto;
+					height: auto;
+					border: 1px solid #000000;
+					box-shadow: 3px 3px #b2beb5;
+}
+.office_background	{	background-color: #6f5b50;}
+.tile_body		{	width: 130px;
+					height: 180px;
+					border: 2pt solid #6f5b50;
+					box-shadow: 2px 2px 2px 2px #808080;
+					padding: 0;
+					margin: .4em 1em 1em 1em;
+					border-radius: 20pt;
+}
+.lab_number	{	text-align: center;
+				margin: 8px 0 -6px 0;
+				padding: 0;
+}
+.footer_depth	{	height: 500px;
+					position: relative;
+					margin-top: 700px;
+}
+.mail_kerning 	{	letter-spacing: .1em;}
+
+			main 	figure	{	position: relative;
+								z-index: 1;
+								opacity: .75;
+								color: rgba(0,0,0,0);
+								margin: 1em;
+								font-size: .5em;
+								text-align: center;
+								transition: all ease-out 1s;
+			}
+			main 	figure:hover	{	opacity: 1;
+										z-index: 999;
+										color: rgba(0,0,0,1);
+										transform: scale(1.5);
+			}
+main 	figure:hover 	figcaption 	{	background-color: #ffffff;}
+
+@media (min-width: 600px){
+	aside 	{	z-index: 20;
+				position: absolute;
+				margin-top: -65px;
+	}
+	nav 	li 	{	display: inline-block;
+					border: 1pt solid #48251e;
+					border-radius: 8pt;
+					background-color: #6f5b50;
+	}
+	nav 	ul 	{	padding-top: 10px;
+					display: flex;
+					justify-content: space-around;
+	}
+	
+	.mug_display 	{	display: contents;}
+	.mug_1024 		{	display: none;}
+	.footer_depth 	{	height: 400px;
+						position: relative;
+						margin-top: 300px;
+	}
+}
+
+@media (min-width: 1024px){
+	nav 	{	z-index: 25;
+				margin-left: 15%; 
+	}
+	main 	{	position: relative;
+				top: -110px;
+				z-index: 5;
+	}
+	header 	{	display: none;}
+	aside 	{	float: left;
+				margin-top: 0px;
+				position: static;
+	}
+	h1 		{	padding: 0;
+				margin: 15px 0;
+	}
+	h3 		{	padding: 0;
+				margin: 8px ;
+	}
+	p 		{	margin-right: 680px;
+	}
+	
+	.header_1024		{	display: block;
+							text-align: center;
+							font-family: Helvetica, Arial, "sans-serif";
+							color: #000000;
+	}
+	.big_pic			{	background-image: url("images/screen_point_1024.png");}
+	.office_background	{	display: none;}
+	.mug_600 			{	display: none;}
+	.mug_1024			{	display: block;}
+	.level_up			{	margin-top: -30px;}
+	
+	.footer_depth	{	height: 200px;
+						position: relative;
+						margin-top: -300px;
+}
+	.tile_body		{	width: 180px;
+						height: 249px;
+						border: 2pt solid #6f5b50;
+						box-shadow: 2px 2px 2px 2px #808080;
+						padding: 0;
+						margin: .4em 1em 1em 1em;
+						border-radius: 20pt;
+}
+	
+	#backdrop	{	background-repeat: no-repeat;
+					height: 600px;
+					background-size: cover;
+					border: none;
+	}
+	
+}
+
+@media (min-width: 1070px){
+	p 		{	margin-right: 750px;}
+	
+		.level_up			{	margin-top: 10px;}
+}
+
+@media (min-width: 1160px){
+	p 		{	margin-right: 860px;}
+	
+		.level_up			{	margin-top: -20px;}
+}
